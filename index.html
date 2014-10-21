@@ -18,14 +18,17 @@
     <script src="./js/dados.js"></script>
 </head>
 <body>
-    <section id="main">
-        <header>
+    <section id="main" class="container">
+
+    	<header class="col-md-12 text-center">
             <h1>Jogo de dados - canvas HTML5</h1>
         </header>
 
-        <nav>
-            <ul>
-                <li class="regras-jogo">Regras do jogo
+        <div class="clearfix"></div>
+
+        <nav class="col-md-8 col-md-offset-2">
+            <ul class="regras-jogo">
+                <li>Regras do jogo
                     <ul class="regras">
                         <li>O Jogador lança um par de dados.</li>
                         <li>Se a soma das duas faces de 6 lados pode ser qualquer número entre 2 e 12.</li>
@@ -37,7 +40,9 @@
             </ul>
         </nav>
 
-        <section class="left dados">
+        <div class="clearfix"></div>
+
+        <section class="dados col-md-3 col-md-offset-2">
             <form name="f" id="f">
                 <input type="text" name="pontos" id="pontos">
                 <input type="text" name="mensagem" id="mensagem" value="">
@@ -46,11 +51,12 @@
             <button class="btn btn-primary" onclick="dados();">Lançar Dados</button>
         </section>
 
-        <canvas id="canvas" width="350" height="200">Seu navegador não suporta HTML5 canvas!</canvas>
+        <canvas id="canvas" class="col-md-4" width="350" height="200">Seu navegador não suporta HTML5 canvas!</canvas>
 
-        <footer>
+        <footer class="col-md-8 col-md-offset-2 text-center">
             <p>by <a href="http://nandomoreira.me/" target="_blank">nandomoreira</a></p>
         </footer>
+
     </section>
 </body>
 </html>
