@@ -1,84 +1,154 @@
-﻿/* css reset http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/  */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}:focus{outline:0}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}
-
-
-/* ESTILOS */
+﻿/* ESTILOS */
 /* ----------------------------------------- */
-body { background: #f3f3f3; font-family: 'Ubuntu', Arial, Verdana; font-size: 100%; color: #565656; }
+body {
+    background: #f3f3f3;
+    font-family: 'Ubuntu', Arial, Verdana;
+    font-size: 100%;
+    color: #565656;
+}
 
-:focus{ outline: 0; }
+:focus {
+    outline: 0;
+}
 
-::-moz-selection{
+::-moz-selection {
     background: #535353;
     color: #FFF;
     text-shadow: none;
 }
-::selection{
+
+::selection {
     background: #535353;
     color: #FFF;
     text-shadow: none;
 }
 
-.clear { clear: both; }
-.left { float: left; }
-.right { float: right; }
-a, a img { border: none; text-decoration: none; }
-strong { font-weight: bold; }
+.clear {
+    clear: both;
+}
 
-#main { margin: 0 auto; width: 75%; }
+.left {
+    float: left;
+}
 
-header { height: 80px; }
-header h1 { border-bottom: 1px solid #c0c0c0; padding: 4px 0; font-size: 32px; float: left; margin: 25px 0 0 20px; text-shadow: 2px 2px 0px #fff; }
+.right {
+    float: right;
+}
 
-nav .regras-jogo { margin: 10px 20px; }
-nav .regras { border: 1px solid #909090; padding: 5px; margin: 5px 0; }
-nav .regras li { margin: 3px 0; font-size: 12px; }
+a, a img {
+    border: none;
+    text-decoration: none;
+}
 
-.dados { width: 250px; }
+strong {
+    font-weight: bold;
+}
+
+#main {
+    margin: 0 auto;
+    width: 75%;
+}
+
+header {
+    height: 80px;
+}
+
+header h1 {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 4px 0;
+    font-size: 32px;
+    float: left;
+    margin: 25px 0 0 20px;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+nav .regras-jogo {
+    margin: 10px 20px;
+}
+
+nav .regras {
+    border: 1px solid #909090;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+nav .regras li {
+    margin: 3px 0;
+    font-size: 12px;
+}
+
+.dados {
+    width: 250px;
+}
 
 canvas {
-    background: #fff; margin: 15px 0;
+    background: #fff;
+    margin: 15px 0;
     -moz-box-shadow: 0px 0px 6px #9c9c9c;
     -webkit-box-shadow: 0px 0px 6px #9c9c9c;
     box-shadow: 0px 0px 6px #9c9c9c;
 }
+
 canvas:hover {
     -moz-box-shadow: 0px 0px 16px #9c9c9c;
     -webkit-box-shadow: 0px 0px 16px #9c9c9c;
     box-shadow: 0px 0px 16px #9c9c9c;
 }
 
-button { 
-    cursor: pointer;background: none; 
-    float: left; border: 1px solid #565656; padding: 4px; 
-    margin: 0 20px; color: #565656;
-    
+button {
+    cursor: pointer;
+    background: none;
+    float: left;
+    border: 1px solid #565656;
+    padding: 4px;
+    margin: 0 20px;
+    color: #565656;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
-
     -moz-box-shadow: 0px 0px 1px #676767;
     -webkit-box-shadow: 0px 0px 1px #676767;
     box-shadow: 0px 0px 1px #676767;
 }
+
 button:hover {
     -moz-box-shadow: 0px 0px 6px #9c9c9c;
     -webkit-box-shadow: 0px 0px 6px #9c9c9c;
     box-shadow: 0px 0px 6px #9c9c9c;
 }
-#f { margin: 15px;  }
-#f input[type="text"] {
-    background: none; display: block;
-    border: none; padding: 5px; font-size: 16px;
-    width: 200px; color: #565656;
+
+#f {
+    margin: 15px;
 }
 
+#f input[type="text"] {
+    background: none;
+    display: block;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+    color: #565656;
+}
 
 footer {
     padding: 30px 0;
 }
-footer p { font-size: 12px; }
-footer p { margin: 0 20px; }
-footer a { color: #565656; }
-footer a:hover { background: #565656; color: #fff; }
+
+footer p {
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0 20px;
+}
+
+footer a {
+    color: #565656;
+}
+
+footer a:hover {
+    background: #565656;
+    color: #fff;
+}
