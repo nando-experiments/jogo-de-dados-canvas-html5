@@ -1,64 +1,56 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Jogo de Dados - HTML5 canvas </title>
 
-        <!--
-        *********************************************************************
-        Fernando Moreira - front-end and back-end developer
-		fernando@fernandomoreiraweb.com | http://fernandomoreiraweb.com/
-        *********************************************************************
-        -->
+    <meta name="author" content="Fernando Moreira">
+	<meta name="contact" content="f@nandomoreira.me">
+    <meta name="description" content="Jogo de Dados - Jogo simples para demonstração de funcionamento de canvas em HTML5">
+    <meta name="robots" content="noindex, nofollow">
 
-        <title> Jogo de Dados - HTML5 canvas </title>
-        
-        <meta name="author" content="Fernando Moreira - front-end and back-end developer" />
-		<meta name="contact" content="fernando@fernandomoreiraweb.com" />
-        <meta name="description" content="Jogo de Dados - Jogo simples para demonstração de funcionamento de canvas em HTML5" />
-        <meta name="robots" content="index,follow" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="./style.css">
 
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" media="all" href="./style.css" />
-        
-        <script src="./js/excanvas.compiled.js"></script>
-        <script src="./js/dados.js"></script>
-    </head>
-    <body>
-        <section id="main">
-            <header>
-                <h1>Jogo de dados - canvas HTML5</h1>
-            </header>
-            
-            <nav>
-                <ul>
-                    <li class="regras-jogo">Regras do jogo
-                        <ul class="regras">
-                            <li>O Jogador lança um par de dados.</li>
-                            <li>Se a soma das duas faces de 6 lados pode ser qualquer número entre 2 e 12.</li>
-                            <li>Se o jogador lançar 7 ou 11 na primera jogada, o jogador vence.</li>
-                            <li>Se lançar e obter 2, 3 ou 12, o jogador perde.</li>
-                            <li>Para qualquer outro resultado (4, 5, 6, 8, 9 ou 10), um lançamento sequencial será solicitado.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            
-            <section class="left dados">
-                <form name="f" id="f">
-                    <input type="text" name="pontos" id="pontos" />
-                    <input type="text" name="mensagem" id="mensagem" value="" /> 
-                </form>
+    <script src="./js/excanvas.compiled.js"></script>
+    <script src="./js/dados.js"></script>
+</head>
+<body>
+    <section id="main">
+        <header>
+            <h1>Jogo de dados - canvas HTML5</h1>
+        </header>
 
-                <button onclick="dados();">Lançar Dados</button>
-            </section>
-            
-            <canvas id="canvas" width="350" height="200">
-                Seu navegador não suporta HTML5 canvas!
-            </canvas>
-            
-            <footer>
-                <p>by <a href="http://fernandomoreiraweb.com/" target="_blank">Fernando Moreira</a> - front-end and back-end developer</p>
-            </footer>            
+        <nav>
+            <ul>
+                <li class="regras-jogo">Regras do jogo
+                    <ul class="regras">
+                        <li>O Jogador lança um par de dados.</li>
+                        <li>Se a soma das duas faces de 6 lados pode ser qualquer número entre 2 e 12.</li>
+                        <li>Se o jogador lançar 7 ou 11 na primera jogada, o jogador vence.</li>
+                        <li>Se lançar e obter 2, 3 ou 12, o jogador perde.</li>
+                        <li>Para qualquer outro resultado (4, 5, 6, 8, 9 ou 10), um lançamento sequencial será solicitado.</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="left dados">
+            <form name="f" id="f">
+                <input type="text" name="pontos" id="pontos">
+                <input type="text" name="mensagem" id="mensagem" value="">
+            </form>
+
+            <button class="btn btn-primary" onclick="dados();">Lançar Dados</button>
         </section>
-    </body>
-</html><!-- by Fernando Moreira - front-end and back-end developer -->
+
+        <canvas id="canvas" width="350" height="200">Seu navegador não suporta HTML5 canvas!</canvas>
+
+        <footer>
+            <p>by <a href="http://nandomoreira.me/" target="_blank">nandomoreira</a></p>
+        </footer>
+    </section>
+</body>
+</html>
